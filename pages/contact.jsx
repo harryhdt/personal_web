@@ -1,5 +1,3 @@
-import { IconCode } from "@supabase/ui";
-import { Head } from "next/document";
 import Layout from "../components/_Layout";
 export default function Contact() {
   return (
