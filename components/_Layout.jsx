@@ -7,6 +7,7 @@ export default function Layout({ title, children }) {
     <div className="bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-400 min-h-screen transition-colors">
       <Head>
         <title>{title}</title>
+        <meta name="theme-color" content="#0f766e" />
       </Head>
       <Header />
       <main>{children}</main>
