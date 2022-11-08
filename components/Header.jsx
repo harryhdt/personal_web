@@ -58,8 +58,8 @@ export function Header() {
         >
           <div
             className="flex
-            bg-white dark:bg-zinc-900 flex-col items-start border border-zinc-200 dark:border-zinc-800 p-2 px-4 space-y-2 bg-opacity-75 dark:bg-opacity-75 backdrop-blur-sm transition-colors
-              sm:border-0 sm:bg-transparent sm:flex-row sm:items-center sm:space-x-8 lg:space-x-16 sm:space-y-0 sm:bg-opacity-100 sm:dark:bg-opacity-100 sm:backdrop-blur-none"
+            bg-white dark:bg-zinc-900 flex-col items-start border border-zinc-200 dark:border-zinc-800 p-2 px-4 space-y-2transition-colors
+              sm:border-0 sm:bg-transparent sm:flex-row sm:items-center sm:space-x-8 lg:space-x-16 sm:space-y-0"
           >
             <Navlink url="/">Home</Navlink>
             <Navlink url="/about">About</Navlink>
