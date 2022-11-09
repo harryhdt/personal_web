@@ -1,6 +1,6 @@
-import { IconSun, IconMoon, IconMenu, IconX } from "@supabase/ui";
+import { Sun, Moon, Menu, X } from "react-feather";
 import Link from "next/link";
-import { use, useEffect, useState, useTransition } from "react";
+import { useEffect, useState } from "react";
 import { Navlink } from "./Navlink";
 export function Header() {
   const [mode, setMode] = useState("");
@@ -24,6 +24,7 @@ export function Header() {
   const [showMenu, setShowMenu] = useState(false);
   //
   useEffect(() => {
+    console.log(showMenu);
     setShowMenu(window.innerWidth < 640 ? false : true);
     window.addEventListener("resize", () => {
       setShowMenu(window.innerWidth < 640 ? false : true);
@@ -41,13 +42,14 @@ export function Header() {
           </Link>
         </div>
         <button
+          aria-name="Toggle dark mode"
           onClick={() => setShowMenu(!showMenu)}
           className="block ml-auto sm:hidden hover:bg-zinc-200 dark:hover:bg-zinc-800 py-1.5 px-2 rounded-md transition-colors"
         >
           {!showMenu ? (
-            <IconMenu className="stroke-2" />
+            <Menu className="stroke-2" />
           ) : (
-            <IconX className="stroke-2" />
+            <X className="stroke-2" />
           )}
         </button>
         <div
@@ -57,9 +59,8 @@ export function Header() {
           }
         >
           <div
-            className="flex
-            bg-white dark:bg-zinc-900 flex-col items-start border border-zinc-200 dark:border-zinc-800 p-2 px-4 space-y-2 transition-colors
-              sm:border-0 sm:bg-white sm:dark:bg-zinc-900 sm:flex-row sm:items-center sm:space-x-8 lg:space-x-16 sm:space-y-0"
+            id="mobile-menu"
+            className="flex sm:hidden bg-white dark:bg-zinc-900 flex-col items-start border-b border-zinc-200 dark:border-zinc-800 p-2 px-4 space-y-2 transition-colors"
           >
             <Navlink url="/">Home</Navlink>
             <Navlink url="/about">About</Navlink>
@@ -70,12 +71,29 @@ export function Header() {
               className="hover:bg-zinc-200 dark:hover:bg-zinc-800 p-2 rounded-md transition-colors"
             >
               {mode === "dark" ? (
-                <IconSun className="w-5 h-5 stroke-2" />
+                <Sun className="w-5 h-5 stroke-2" />
               ) : (
-                <IconMoon className="w-5 h-5 stroke-2" />
+                <Moon className="w-5 h-5 stroke-2" />
               )}
             </button>
           </div>
+        </div>
+        <div className="hidden sm:flex items-center sm:space-x-8 lg:space-x-16">
+          <Navlink url="/">Home</Navlink>
+          <Navlink url="/about">About</Navlink>
+          <Navlink url="/portfolio">Portfolio</Navlink>
+          <Navlink url="/contact">Contact</Navlink>
+          <button
+            aria-name="Toggle dark mode"
+            onClick={toggleDarkMode}
+            className="hover:bg-zinc-200 dark:hover:bg-zinc-800 p-2 rounded-md transition-colors"
+          >
+            {mode === "dark" ? (
+              <Sun className="w-5 h-5 stroke-2" />
+            ) : (
+              <Moon className="w-5 h-5 stroke-2" />
+            )}
+          </button>
         </div>
       </div>
     </div>

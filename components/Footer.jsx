@@ -1,4 +1,4 @@
-import { IconHeart } from "@supabase/ui";
+import { Heart } from "react-feather";
 import Link from "next/link";
 
 export default function Footer() {
@@ -7,12 +7,12 @@ export default function Footer() {
       <div className="w-full max-w-5xl mx-auto text-center py-4 text-sm">
         &copy; {new Date().getFullYear()}{" "}
         <Link href="/">
-          <span className="font-medium text-green-600 dark:text-green-500 hover:underline transition-colors">
+          <span className="font-medium text-green-700 dark:text-green-500 hover:underline transition-colors">
             &#123; harryhdt.dev &#125;
           </span>
         </Link>{" "}
         made with{" "}
-        <IconHeart className="stroke-2 text-red-600 inline w-[14px] h-[14px]" />{" "}
+        <Heart className="stroke-2 text-red-600 inline w-[14px] h-[14px]" />{" "}
         Love.
       </div>
     </div>
