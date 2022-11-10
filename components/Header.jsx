@@ -24,7 +24,7 @@ export function Header() {
   const [showMenu, setShowMenu] = useState(false);
   //
   useEffect(() => {
-    mode = location.theme === "dark" ? "dark" : "light";
+    setMode(location.theme === "dark" ? "dark" : "light");
     setShowMenu(window.innerWidth < 640 ? false : true);
     window.addEventListener("resize", () => {
       setShowMenu(window.innerWidth < 640 ? false : true);
