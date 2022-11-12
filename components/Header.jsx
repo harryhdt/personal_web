@@ -68,6 +68,7 @@ export function Header() {
             <Navlink url="/contact">Contact</Navlink>
             <button
               onClick={toggleDarkMode}
+              aria-label="Toggle dark mode"
               className="hover:bg-zinc-200 dark:hover:bg-zinc-800 p-2 rounded-md transition-colors"
             >
               {mode === "dark" ? (
