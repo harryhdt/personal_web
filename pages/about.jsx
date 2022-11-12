@@ -22,6 +22,62 @@ export default function About() {
               <br />I learn every day, to make me grow and gain more experience.
             </p>
             <p className="text-base sm:text-lg">
+              I have some skill, here is,
+              <br />
+              <br />
+              1. Fullstack Web
+              <br />
+              - PHP Laravel
+              <br />
+              - Inertia js
+              <br />
+              - Svelte js
+              <br />
+              - Alpine js
+              <br />
+              - Tailwind css
+              <br />
+              - IBM Carbon Design System
+              <br />
+              - MySQL
+              <br />
+              <br />
+              2. Frontend Web
+              <br />
+              - Svelte (& Kit)
+              <br />
+              - React (& Next)
+              <br />
+              - Alpine js
+              <br />
+              - Tailwind css
+              <br />
+              - Some UI Library
+              <br />
+              <br />
+              3. Frontend Mobile
+              <br />
+              - Flutter (Dart)
+              <br />
+              <br />
+              4. Backend Developemnt
+              <br />
+              - Laravel
+              <br />
+              - Node js (Express, Adonis)
+              <br />
+              <br />
+              5. Cloud
+              <br />
+              - Digitalocean (VPS)
+              <br />
+              - Domainesia (Hosting & Domain)
+              <br />- Supabase & Firebase
+            </p>
+            <p className="text-base sm:text-lg">
+              And i always open to learn new technology if it needed.
+            </p>
+            <p className="text-base sm:text-lg">
               My current setup is Lenovo Ideapad Slim 3, with 512 GB SSD, 8 GB
               RAM, AMD Ryzen 5 4000 Series, Then, I am using Pop OS from
               System76, is a Linux distribution.

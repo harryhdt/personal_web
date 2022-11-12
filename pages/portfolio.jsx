@@ -12,6 +12,9 @@ export default function About() {
             <p className="text-base sm:text-lg">
               Here is some project i was build, is a web and mobile application.
             </p>
+            <p className="text-base sm:text-lg italic opacity-50">
+              Under construction...
+            </p>
           </div>
         </div>
       </div>

@@ -10,9 +10,11 @@ export default function Contact() {
         <div className="w-full max-w-5xl mx-auto">
           <div className="min-h-[calc(100vh-111px)] py-4 sm:py-8 space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold">Contact</h2>
-            <p>
+            <p className="text-base sm:text-lg">
               We can discuss about projects, work or somethings like that, for
               the first, please to contact me using email form below.
+              <br />
+              <span className="italic opacity-50">(Not ready yet)</span>
             </p>
             <form
               action="#"
