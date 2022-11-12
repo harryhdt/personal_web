@@ -42,7 +42,7 @@ export function Header() {
           </Link>
         </div>
         <button
-          aria-name="Toggle dark mode"
+          aria-label="Toggle dark mode"
           onClick={() => setShowMenu(!showMenu)}
           className="block ml-auto sm:hidden hover:bg-zinc-200 dark:hover:bg-zinc-800 py-1.5 px-2 rounded-md transition-colors"
         >
@@ -84,7 +84,7 @@ export function Header() {
           <Navlink url="/portfolio">Portfolio</Navlink>
           <Navlink url="/contact">Contact</Navlink>
           <button
-            aria-name="Toggle dark mode"
+            aria-label="Toggle dark mode"
             onClick={toggleDarkMode}
             className="hover:bg-zinc-200 dark:hover:bg-zinc-800 p-2 rounded-md transition-colors"
           >

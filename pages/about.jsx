@@ -36,6 +36,7 @@ export default function About() {
                 className="font-medium text-green-700 dark:text-green-500 hover:underline transition-colors"
                 href="https://linkedin.com/in/harryhdt"
                 target="_blank"
+                rel="noreferrer"
               >
                 @harryhdt
               </a>
@@ -44,6 +45,7 @@ export default function About() {
                 className="font-medium text-green-700 dark:text-green-500 hover:underline transition-colors"
                 href="https://t.me/harryhdt"
                 target="_blank"
+                rel="noreferrer"
               >
                 @harryhdt
               </a>
@@ -52,6 +54,7 @@ export default function About() {
                 className="font-medium text-green-700 dark:text-green-500 hover:underline transition-colors"
                 href="https://github.com/harryhdt"
                 target="_blank"
+                rel="noreferrer"
               >
                 @harryhdt
               </a>
