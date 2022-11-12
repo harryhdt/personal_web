@@ -32,7 +32,7 @@ export function Header() {
   }, []);
   //
   return (
-    <div className="sticky top-0 z-50 bg-white dark:bg-zinc-900 bg-opacity-75 dark:bg-opacity-75 backdrop-blur-sm px-4 sm:px-8 md:px-16 lg:px-4 border-b border-zinc-200 dark:border-zinc-800 transition-colors">
+    <div className="sticky top-0 z-50 bg-white dark:bg-zinc-900 bg-opacity-80 dark:bg-opacity-80 backdrop-blur-sm px-4 sm:px-8 md:px-16 lg:px-4 border-b border-zinc-200 dark:border-zinc-800 transition-colors">
       <div className="w-full max-w-5xl mx-auto flex items-center justify-between h-14">
         <div>
           <Link href="/">
@@ -60,7 +60,7 @@ export function Header() {
         >
           <div
             id="mobile-menu"
-            className="flex sm:hidden bg-white dark:bg-zinc-900 flex-col items-start border-b border-zinc-200 dark:border-zinc-800 p-2 px-4 space-y-2 transition-colors"
+            className="flex  bg-opacity-80 dark:bg-opacity-80 backdrop-blur-sm sm:hidden bg-white dark:bg-zinc-900 flex-col items-start border-b border-zinc-200 dark:border-zinc-800 p-2 px-4 space-y-2 transition-colors"
           >
             <Navlink url="/">Home</Navlink>
             <Navlink url="/about">About</Navlink>
