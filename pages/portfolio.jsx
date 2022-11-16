@@ -33,7 +33,7 @@ export default function About() {
                   <div>
                     <h3 className="text-lg font-semibold">M2Fleet</h3>
                     <p className="text-sm">
-                      Is a website for company profile, with elegant UI. Within
+                      Is a website for company profile, with elegant UI. With
                       blogging features.
                     </p>
                   </div>
@@ -57,7 +57,7 @@ export default function About() {
                     <h3 className="text-lg font-semibold">RFIDSolutions</h3>
                     <p className="text-sm">
                       Is a website for company profile, with elegant and luxury
-                      UI. Within blogging features.
+                      UI. With blogging features.
                     </p>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export default function About() {
                     </h3>
                     <p className="text-sm">
                       Is a System Information Web Based, for management data,
-                      within QR features, Excel Export & Import.
+                      With QR features, Excel Export & Import.
                     </p>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ export default function About() {
                     <h3 className="text-lg font-semibold">iTech Poliban</h3>
                     <p className="text-sm">
                       Is a website Community Profile, with management data like
-                      members, and etc. Within blogging, auth, and many more
+                      members, and etc. With blogging, auth, and many more
                       features.
                     </p>
                   </div>
@@ -136,8 +136,8 @@ export default function About() {
                       iTech Poliban Competition #1
                     </h3>
                     <p className="text-sm">
-                      Is a website for show information about competition,
-                      within google docs embedded features.
+                      Is a website for show information about competition, With
+                      google docs embedded features.
                     </p>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ export default function About() {
                     </h3>
                     <p className="text-sm">
                       Is a Backend Service with dashboard, used for frontend web
-                      like personal web and etc. Within email delivery,{" "}
+                      like personal web and etc. With email delivery,{" "}
                       <s>content reactions, comment box</s> features.
                     </p>
                   </div>
