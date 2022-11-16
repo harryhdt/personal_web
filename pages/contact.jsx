@@ -22,7 +22,8 @@ export default function Contact() {
     };
     //
     let token = "Rc5apIkjdH3jRBy1668573018tlmYRvnLbku1lFk";
-    let email_sender_api = "http://mailer.harryhdt.dev/api/send-email/" + token;
+    let email_sender_api =
+      "https://mailer.harryhdt.dev/api/send-email/" + token;
     //
     const res = await fetch(email_sender_api, {
       method: "POST",
@@ -62,8 +63,6 @@ export default function Contact() {
             <p className="text-base sm:text-lg">
               We can discuss about projects, work or somethings like that, for
               the first, please to contact me using email form below.
-              <br />
-              <span className="italic opacity-50">(Not ready yet)</span>
             </p>
             <form
               onSubmit={sendEmailForm}
