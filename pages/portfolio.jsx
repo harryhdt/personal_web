@@ -162,9 +162,10 @@ export default function About() {
                       SaaS Harry Hidayat
                     </h3>
                     <p className="text-sm">
-                      Is a Backend Service with dashboard, used for frontend web
-                      like personal web and etc. With email delivery,{" "}
-                      <s>content reactions, comment box</s> features.
+                      Is a Software Third Party Service with dashboard, used for
+                      frontend web like personal web, company profile and etc.
+                      With email delivery, <s>content reactions, comment box</s>{" "}
+                      features.
                     </p>
                   </div>
                 </div>
