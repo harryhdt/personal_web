@@ -22,8 +22,7 @@ export default function Contact() {
     };
     //
     let token = "Rc5apIkjdH3jRBy1668573018tlmYRvnLbku1lFk";
-    let email_sender_api =
-      "https://mailer.harryhdt.dev/api/send-email/" + token;
+    let email_sender_api = "https://saas.harryhdt.dev/api/send-email/" + token;
     //
     try {
       const res = await fetch(email_sender_api, {

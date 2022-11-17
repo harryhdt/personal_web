@@ -152,14 +152,14 @@ export default function About() {
                 <div className="space-y-4">
                   <div className="aspect-video">
                     <img
-                      src="/baas-harry-hidayat.png"
-                      alt="BaaS Harry Hidayat"
+                      src="/saas-harry-hidayat.png"
+                      alt="SaaS Harry Hidayat"
                       className="w-full h-auto shadow-md"
                     />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">
-                      BaaS Harry Hidayat
+                      SaaS Harry Hidayat
                     </h3>
                     <p className="text-sm">
                       Is a Backend Service with dashboard, used for frontend web
