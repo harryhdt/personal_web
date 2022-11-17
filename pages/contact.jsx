@@ -25,29 +25,34 @@ export default function Contact() {
     let email_sender_api =
       "https://mailer.harryhdt.dev/api/send-email/" + token;
     //
-    const res = await fetch(email_sender_api, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-    const result = await res.json();
-    if (String(res.status)[0] != 2) {
-      setErrorAlert(result.message);
-      //
-      if (result.errors) {
-        Object.keys(result.errors).forEach((key) => {
-          result.errors[key] = result.errors[key][0];
-        });
-        setErrors(result.errors);
+    try {
+      const res = await fetch(email_sender_api, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      const result = await res.json();
+      if (String(res.status)[0] != 2) {
+        setErrorAlert(result.message);
+        //
+        if (result.errors) {
+          Object.keys(result.errors).forEach((key) => {
+            result.errors[key] = result.errors[key][0];
+          });
+          setErrors(result.errors);
+        }
+      } else {
+        setSuccessAlert(result.message);
+        e.target.reset();
       }
-    } else {
-      setSuccessAlert(result.message);
-      e.target.reset();
+    } catch {
+      setErrorAlert("SERVER ERROR");
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
   //
   return (
