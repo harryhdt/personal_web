@@ -10,7 +10,7 @@ import IBMIcon from "../components/Icons/IBM";
 export default function About() {
   return (
     <Layout
-      title="Portofolio - Harry Hidayat"
+      title="Portfolio - Harry Hidayat"
       description="Here is some project i was build, is a web and mobile application."
     >
       <div className="px-4 sm:px-8 md:px-16 lg:px-4 dark:border-zinc-800 transition-colors">
